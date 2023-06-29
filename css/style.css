@@ -636,6 +636,16 @@ html body header .top .center .loginBox li.total,
 html body header .bottom .center .loginBox li.total {
   padding: 0 20px;
 }
+html body header .top .center .loginBox li.message.notify::before,
+html body header .bottom .center .loginBox li.message.notify::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+}
 html body header .top .center .loginBox li a,
 html body header .bottom .center .loginBox li a {
   width: 100%;
