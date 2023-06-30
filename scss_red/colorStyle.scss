@@ -1,23 +1,23 @@
 $BG_color_1: #820333;
 $BG_color_2: #ffffff;
-$BG_color_3: #f4f4f4;
+$BG_color_3: #FBF2E7;
 
 $Font_color_1: #ffffff;
 $Font_color_2: #000000;
 $Font_color_3: #686868;
 
-$Font_color_4: $BG_color_1;
+$Font_color_4: #BF8E2A;
 $Font_Title_1: $BG_color_1;
 $Font_Title_1_Active: #F0433A;
 
 
 $Font_remind: #ff0000;
 $Font_negative: $Font_remind;
-$Font_positive: #32b411;
+$Font_positive: #07D400;
 
-$Font_accent01: #540032;
-$Font_accent02: #F5BFB8;
-$Font_accent03: mix($Font_Title_1_Active,$Font_accent02, 90%);
+$Font_accent01: #50001F;
+$Font_accent02: #F2DBE3;
+$Font_accent03: #FFD47D;
 
 $Border_color_0: #ffffff;
 $Border_color_1: #cccccc;
@@ -31,8 +31,8 @@ $filter_1: #000000a4;
 
 $linear_1: linear-gradient(to top, $Font_Title_1_Active 0%, $BG_color_1 50%, $Font_Title_1_Active 100%);
 $linear_1_Active: linear-gradient(to top, $Font_Title_1_Active 0%, $Border_color_3 50%, $Font_Title_1_Active 100%);
-$linear_2: linear-gradient(to right, $Font_Title_1_Active 0%, $Font_accent01 100%);
-$BankCard_BG: linear-gradient(120deg, $Font_Title_1_Active 0%, $BG_color_1 50%, $Font_Title_1_Active 100%);
+$linear_2: linear-gradient(to left, $Font_Title_1_Active 0%, #C7004B 100%);
+$BankCard_BG: linear-gradient(225deg, #B70C4D 0%, $BG_color_1 50%, #B70C4D 100%);
 
 //header
 header .top {
@@ -53,31 +53,32 @@ header .UnLoginBox label input {
     font-weight: bold;
 }
 header .UnLoginBox label i {
-    color: $Font_color_2;
+    color: $Font_color_4;
     font-size: 14px;
 }
 header .UnLoginBox .loginBtn { //個別調整
-    background: $linear_1;
+    background: linear-gradient(to top, $Font_accent03 0%, $Font_color_4 50%, $Font_accent03 100%);
     border-radius: 3px;
-    border: 1px solid $Border_color_0;
+    border: none;
     color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        background: linear-gradient(to bottom, $Font_accent01 0%, $Font_Title_1_Active 50%, $Font_accent01 100%);;
+        background: linear-gradient(to bottom, $Font_color_4 0%, $Font_accent03 100%);
     }
 }
 header .UnLoginBox .registerBtn { //個別調整
-    background: $Font_Title_1_Active;
-    border: solid 1px $Border_color_0;
+    background: linear-gradient(to top, #54E8FF 0%, #2884FC 50%, #54E8FF 100%);
+    border: none;
     border-radius: 3px;
     color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        border-color: $BG_color_1;
+        background: linear-gradient(to top, #28BBFC 0%, #2884FC 100%);
+        border: 1px solid $Border_color_0;
     }
 }
 header .UnLoginBox .registerBtn i { //個別調整
@@ -117,7 +118,7 @@ header .loginBox>li:nth-of-type(8) { //個別調整
     }
 }
 header .loginBox .userName { //個別調整
-    color: $Font_accent02;
+    color: $Font_color_1;
     font-size: 16px;
     font-weight: bold;
 
@@ -134,10 +135,10 @@ header .loginBox li:not(:first-child) p {
     color: $Font_color_1;
 }
 header .loginBox>li.total p { //個別調整
-    color: $Font_accent03;
+    color: $Font_color_1;
 }
 header .loginBox>li.total i { //個別調整
-    color: $Font_accent03;
+    color: $Font_color_1;
     font-size: 12px;
 }
 header .loginBox .transferInfo  { //個別調整
@@ -156,6 +157,12 @@ header .loginBox .transferInfo li p.money {
     font-size: 14px;
     font-weight: bold;
 }
+header .loginBox li.message.notify::before {
+    background: $Font_accent03;
+    color: $Font_color_2;
+    font-size: 12px;
+    font-weight: bold;
+}
 header .bottom {
     background: $BG_color_2;
 }
@@ -163,14 +170,14 @@ header nav li::before {
     background: $Border_color_3;
 }
 header nav li a p {
-    color: $Font_Title_1;
+    color: $Font_color_2;
     font-size: 18px;
     font-weight: bold;
 }
 header nav li:hover a p,
 header nav li:active a p,
 header nav li.active a p {
-    color: $Font_Title_1_Active;
+    color: $Font_Title_1;
 }
 header .downList {
     background: $BG_color_2;
@@ -208,8 +215,11 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 }
 
 //home
+.home .mainWrap {
+    background: $BG_color_3;
+}
 .home .typeList .gameBlock p {
-    color: $Font_Title_1;
+    color: $Font_color_2;
     font-size: 26px;
     font-weight: bold;
 }
@@ -229,7 +239,7 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 
 //gamePage 遊戲頁
 main .gamePage_Wrap .center .containerWrap .textBox .title {
-    background: linear-gradient(to bottom, $Font_color_4 0%, $Font_Title_1_Active 100%);
+    background: linear-gradient(to bottom, $Font_Title_1 0%, $Font_Title_1 100%);
     font-weight: bold;
 }
 main .gamePage_Wrap .center .containerWrap .textBox .title p.big {
@@ -271,19 +281,19 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li  {
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        color: $Font_Title_1_Active;
+        color: $Font_color_2;
 
         &::before {
-            background: $Font_color_4;
+            background: $Font_Title_1_Active;
         }
 
         &::after{
-            border-color: transparent transparent $Font_color_4 transparent; 
+            border-color: transparent transparent $Font_Title_1_Active transparent; 
         }
     }
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
-    color: $Font_color_3;
+    color: $Font_Title_1_Active;
     font-size: 18px;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search input {
@@ -296,7 +306,7 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
     border-radius: 5px;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
-    color: $Font_color_3;
+    color: $Font_color_2;
     font-size: 18px;
     font-weight: bold;
 }
@@ -305,33 +315,33 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
     color: $Border_color_1;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i.fa-solid.fa-heart {  //自行調整
-    color: #ff30b2;
+    color: $Font_color_4;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
     background: $filter_1;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter {  //自行調整
-    background: linear-gradient(to top, #801c1c 0%, #f13945 100%);
+    background: linear-gradient(to top, #FBD865 0%, #BB8527 50% ,#FBD865 100%);
     border-radius: 3px;
-    border: 1px solid #f56d5c;
+    border: none;
     color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        background: #5a0c0c;
+        background: linear-gradient(to top, #BB8527 0%, #9B580B 100%);
     }
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try {  //自行調整
-    background: linear-gradient(to top, #324ab9 0%, #6a91f3 100%);
+    background: linear-gradient(to top, #63D457 0%, #43952B 50% ,#63D457 100%);
     border-radius: 3px;
-    border: 1px solid #5c8df5;
+    border: none;
     color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        background: #0e1c5e;
+        background: linear-gradient(to top, #48BB3D 0%, #248B19 100%);
     }
 }
 
@@ -356,7 +366,7 @@ main .eventWrap .eventBody .sideNav ul li {
         background: $Font_accent02;
 
         &::before {
-            background: $Font_Title_1_Active;
+            background: $BG_color_1;
         }
     }
 }
@@ -384,10 +394,10 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button {
     height: 35px;
 }
 main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //個別調整
-    background: linear-gradient(to bottom, $Font_accent01 0%, $Font_Title_1_Active 50%, $Font_accent01 100%); 
-
+    background: linear-gradient(to bottom, #56DB94 0%, #2395A2 50%, #56DB94 100%); 
+    border: none;
     &:hover,&:active,&.active {
-        background: linear-gradient(to bottom, $Font_accent01 0%, $Font_Title_1_Active 50%, $Font_accent01 100%)
+        background: #28979F;
     }
 }
 
@@ -405,7 +415,7 @@ main .helpWrap .helpBody .sideNav ul li .topic i {
     font-size: 18px;
 }
 main .helpWrap .helpBody .sideNav ul li .topic i.fa-chevron-right {
-    color: $Font_color_4;
+    color: $Font_Title_1;
 }
 main .helpWrap .helpBody .sideNav ul li .topic p {
     color: $Font_Title_1;
@@ -440,7 +450,7 @@ main .helpWrap .helpBody .container>div p {
     line-height: 24px;
 }
 main .helpWrap .helpBody .container>div a {
-    color: $Font_color_4;
+    color: $Font_Title_1;
 }
 main .helpWrap .helpBody .container>div p.remind {
     color: $Font_remind;
@@ -454,7 +464,7 @@ main .helpWrap .helpBody .container>div p.haveBtn {
 
 //innerPage
 main.innerPage { //個別調整
-    background: #f4f4f4;
+    background: #FBF2E7;
 }
 
 //3欄背景
@@ -472,7 +482,7 @@ main.innerPage .center .leftSide p.userAccount {
     font-weight: bold;
 }
 main.innerPage .center .leftSide p.userAccount .level { //個別調整
-    background: $Font_Title_1_Active;
+    background: $Font_color_4;
     border-radius: 5px;
     color: $Font_color_1;
     font-size: 14px;
@@ -488,13 +498,11 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
     border-radius: 50px;
     border: 1px solid $Border_color_2;
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn,
-main.innerPage .center .leftSide .quickSelect li .quickBtn,
 main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整
 
     &:hover,&:active,&.active {
-        background: $BG_color_1;
-        border-radius: 50px;
+        background: $Font_Title_1_Active;
+        border: none;
     }
 }
 main.innerPage .center .leftSide .quickSelect li .quickBtn p {
@@ -525,7 +533,7 @@ main.innerPage .center .leftSide .innerNav li a p {
     font-weight: bold;
 }
 main.innerPage .center .leftSide .innerNav li a i {
-    color: $Font_color_4;
+    color: $Font_Title_1_Active;
     font-size: 14px;
 }
 main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-credit-card {
@@ -541,18 +549,18 @@ main.innerPage .center .leftSide .content .innerNav li.active a { //個別調整
     background: $Font_accent02;
     
     &::before {
-        background: $Font_color_4;
+        background: $Font_Title_1;
     }
 }
 main.innerPage .center .leftSide .innerNav li:hover a i,
 main.innerPage .center .leftSide .innerNav li:active a i,
 main.innerPage .center .leftSide .innerNav li.active a i {
-    color: $Font_color_4;
+    color: $Font_Title_1_Active;
 }
 main.innerPage .center .leftSide .innerNav li:hover a p,
 main.innerPage .center .leftSide .innerNav li:active a p,
 main.innerPage .center .leftSide .innerNav li.active a p {
-    color: $Font_color_4;
+    color: $Font_Title_1;
 }
 main.innerPage .center .leftSide .innerNav li:hover a::before,
 main.innerPage .center .leftSide .innerNav li:active a::before,
@@ -578,7 +586,7 @@ main.innerPage .center .rightSide .listTitle a.more {
     letter-spacing: 1px;
 }
 main.innerPage .center .rightSide .listTitle a.more i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -607,12 +615,13 @@ main.innerPage .center .rightSide .recordList li .detail {
     font-size: 14px;
 }
 main.innerPage .center .rightSide .recordList li .detail i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
 }
 main.innerPage .center .rightSide .recordList li .winLose .half {
     color: $Font_color_2;
     font-size: 15px;
+    font-weight: bold;
 }
 main.innerPage .center .rightSide .recordList li .winLose .half.win {
     color: $Font_positive;
@@ -624,6 +633,7 @@ main.innerPage .center .rightSide .recordList li .winLose .half span {
     color: $Font_color_3;
     font-size: 13px;
     letter-spacing: 1px;
+    font-weight: unset;
 }
 main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
     color: $Font_color_2;
@@ -653,7 +663,7 @@ main.innerPage .center .innerPageTitle>p {
 
 //上部 第二項目欄通用
 main.innerPage .center .midSide .midTop .objectList>i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 16px;
     cursor: pointer;
 }
@@ -728,7 +738,7 @@ main.innerPage .center .midSide .midBottom form label p.remind {
 }
 main.innerPage .center .midSide .midTop form .half label i,
 main.innerPage .center .midSide .midBottom form label i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
 }
 main.innerPage .center .midSide .midTop form .half button.submitBtn,
@@ -747,8 +757,8 @@ main.innerPage .center .midSide .midPageList li {
     font-weight: bold;
     letter-spacing: 2px;
 
-    &:hover,&:active,&.active { 
-        background: linear-gradient(135deg, $Font_Title_1_Active 0%, $Font_accent01 100%); 
+    &:hover,&:active,&.active { //個別調整
+        background: linear-gradient(135deg, #EBB954 0%, #F0433A 100%);
     }
 }
 
@@ -763,8 +773,8 @@ main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button 
     font-size: 14px;
 
     &:hover,&:active,&.active {
-        background: $Font_color_4;
-        border-color: $Border_color_2;
+        // background: $Font_Title_1;
+        // border-color: $Border_color_2;
         color: $Font_color_1;
     }
 }
@@ -774,10 +784,10 @@ main.innerPage .center .midSide .midBottom .content form.searchBlock::before {
 
 //表格通用
 main.innerPage .center .midSide .midBottom table tr th {
-    border-bottom: 2px solid $Border_color_2;
+    border-bottom: 2px solid $Border_color_3;
 }
 main.innerPage .center .midSide .midBottom table tr th p {
-    color: $Font_Title_1;
+    color: $Font_color_2;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
@@ -796,7 +806,7 @@ main.innerPage .center .midSide .midBottom table tr td p {
     text-align: center;
 }
 main.innerPage .center .midSide .midBottom table tr td i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
     text-align: center;
 }
@@ -845,7 +855,7 @@ main.innerPage .center .midSide.memberCenter .midBottom form .half label button 
     white-space: nowrap;
 }
 main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
-    width: 100px;
+    width: 130px;
     height: 40px;
     font-size: 15px;
     letter-spacing: 1px;
@@ -855,7 +865,7 @@ main.innerPage .center .midSide.memberCenter .midBottom form .half>.remind  {
     font-size: 12px;
 }
 main.innerPage .center .midSide.memberCenter .midBottom form .half>.remind span {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
     font-weight: bold;
 }
@@ -866,10 +876,10 @@ main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-ch
     border-right: 1px solid $Border_color_1;
 }
 main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(3) p {
-    color: $Font_accent01;
+    color: $Font_color_4;
 }
-main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {
-    color: $Font_positive;
+main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {  //個別調整
+    color: #2C8712;
 }
 
 //invite
@@ -896,7 +906,7 @@ main.innerPage .center .midSide.vip .midBottom .bar {
     border-radius: 50px;
 }
 main.innerPage .center .midSide.vip .midBottom .bar span {
-    background: linear-gradient(to right, $Font_Title_1_Active 0%, $Font_accent01 100%);
+    background: linear-gradient(to right, $Font_Title_1_Active 0%, $Font_Title_1_Active 100%);
     border-radius: 50px;
 }
 main.innerPage .center .midSide.vip .midBottom ul.toNext li p {
@@ -925,11 +935,11 @@ main.innerPage .center .midSide.vip .midBottom .levelWelfare button.more {
     font-size: 14px;
 }
 main.innerPage .center .midSide.vip .midBottom .titleM i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
 }
 main.innerPage .center .midSide.vip .midBottom .vipCardList i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
 }
 main.innerPage .center .midSide.vip .midBottom .vipCardList ul ol li .vipDetail p {
@@ -1010,7 +1020,7 @@ main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap p {
     font-size: 14px;
 }
 main.innerPage .center .midSide.wallet .midBottom .platformWallet .stateWrap i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
 }
 
@@ -1038,7 +1048,7 @@ main.innerPage .center .midSide.dealRecord .midBottom table tr th:not(:last-chil
     border-right: 1px solid $Border_color_1;
 }
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(3) p {
-    color: $Font_accent01;
+    color: $Font_color_4;
 }
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
     color: $Font_positive;
@@ -1046,20 +1056,23 @@ main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-t
 
 //pointRecord
 main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-type(1) p {
-    color: $Font_accent01;
+    color: $Font_Title_1_Active;
     text-decoration: underline;
     cursor: pointer;
 }
 
 //betRecord
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap {
-    border-bottom: 1px solid $Border_color_2;
+    border-bottom: 2px solid $Border_color_3;
 } 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap p {
     color: $Font_Title_1;
     font-size: 14px;
     font-weight: bold;
 } 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap {
+    border-bottom: 1px solid $Border_color_1;
+}
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p {
     color: $Font_color_2;
     font-size: 14px;
@@ -1073,7 +1086,7 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .de
     color: $Font_positive;
 } 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
 } 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li {
@@ -1223,7 +1236,7 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
     background: $Border_color_1;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .titleM i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
     color: $Border_color_1;
@@ -1295,7 +1308,7 @@ main.innerPage .center .midSide .midTop .platformWallet .stateWrap p {
     font-size: 14px;
 }
 main.innerPage .center .midSide .midTop .platformWallet .stateWrap i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
 }
 
@@ -1304,7 +1317,7 @@ main.innerPage .center .midSide.transfer .midTop .platformWallet {
     border-bottom: 1px solid $Border_color_1;
 }
 main.innerPage .center .midSide.transfer .midTop .platTransfer form i.fa-right-long {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 30px;
 }
 main.innerPage .center .midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
@@ -1362,7 +1375,7 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
     border-radius: 20px;
 }
 .registerWrap .signUpBlock .title i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 40px;
 }
 .registerWrap .signUpBlock .title p {
@@ -1371,11 +1384,11 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
     font-weight: bold;
 }
 .registerWrap .signUpBlock form label .outer button {
-    color: $Font_color_4;
-    border-color: $Font_color_4;
+    color: $Font_Title_1;
+    border-color: $Font_Title_1;
 
     &:hover,&:active,&.active {
-        background: $BG_color_1;
+        // background: $BG_color_1;
         color: $Font_color_1;
     }
 }
@@ -1395,7 +1408,8 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
     font-weight: bold;
 }
 .registerWrap .signUpBlock form .policy p span {
-    color: $Font_Title_1_Active;
+    color: $Font_color_4;
+    text-decoration: underline;
 }
 
 //footer
@@ -1410,7 +1424,7 @@ footer .top .center li p {
 footer .top .center li:hover a,
 footer .top .center li:active a,
 footer .top .center li.active a { //個別調整
-    background: radial-gradient(circle,  $Font_Title_1_Active -5px , $BG_color_1 40px);
+    background: radial-gradient(circle, #B11F42 -5px ,  $Font_accent01 40px);
 }
 footer .top .center .copyright {
     color: $Font_color_1;
@@ -1446,7 +1460,7 @@ aside.app i.fa-download {
     font-size: 25px;
 }
 aside.app p { //個別調整
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 5px;
@@ -1500,14 +1514,14 @@ aside.colorPicker .hint i{
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        color: $Font_Title_1_Active;
+        color: $BG_color_1;
     }
 }
 .filter .jumpWindow.news li button::before {
     background: $Border_color_1;
 }
 .filter .jumpWindow.news li button::after {
-    background: $Border_color_2;
+    background: $Font_Title_1_Active;
 }
 .filter .jumpWindow.news li .text {
     color: $Font_color_2;
@@ -1549,7 +1563,7 @@ aside.colorPicker .hint i{
     vertical-align: middle;
 }
 .filter .jumpWindow .content table tr th p {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 14px;
     font-weight: bold;
 }
@@ -1609,14 +1623,17 @@ aside.colorPicker .hint i{
     font-weight: bold;
 }
 .filter .jumpWindow.quickTransfer .content form label i {
-    color: $Font_color_4;
+    color: $Font_Title_1;
     font-size: 24px;
 }
-.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p {
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button {
     font-size: 14px;
 
     &:hover,&:active,&.active {
-        color: $Font_Title_1;
+
+        p {
+            color: $Font_color_1;
+        }
     }
 }
 .filter .jumpWindow.quickTransfer .btnBox {
@@ -1624,14 +1641,14 @@ aside.colorPicker .hint i{
 }
 
 
-//marquee 跑馬燈
+//marquee 跑馬燈  //個別調整
 @mixin marqueeStyle {
     background: $BG_color_2;
     border-radius: 50px;
     box-shadow: 0 0 13px 3px $boxShadow_1;
     display: flex;
     padding: 5px;
-    margin: 20px auto;
+    margin: 0 auto;
 
     .title {
         width: 160px;
@@ -1640,7 +1657,7 @@ aside.colorPicker .hint i{
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        background: $linear_1;
+        background: linear-gradient(to bottom, #820333 0%, #B11F42 50%, #820333 100%);;
         border-radius: 50px;
         color: $Font_color_1;
         font-size: 16px;
@@ -1740,31 +1757,32 @@ aside.colorPicker .hint i{
 }
 
 //按鈕
-.btnStyle_1 { //按鈕樣式_1
-    background: $linear_1;
-    border: 1px solid $Border_color_1;
+.btnStyle_1 { //按鈕樣式_1 //個別調整
+    background: linear-gradient(to bottom, #F3CA74 0%, #D27C30 50% ,#F3CA74 100%);
+    border: 1px solid #AE572A;
     border-radius: 5px;
     color: $Font_color_1;
     font-size: 16px;
     font-weight: bold;
 
     &:hover,&:active,&.active {
-        background: $linear_1_Active;
+        background: #D58722;
     }
 
     &:disabled { //個別調整
         background: #c0c0c0;
+        border: none;
         cursor: default;
     }
 }
 .btnStyle_2 { //按鈕樣式_2 主色邊線按鈕
     background: transparent;
-    border: 1px solid $Border_color_3;
+    border: 1px solid $BG_color_1;
     border-radius: 3px;
     color: $Font_Title_1;
 
     &:hover,&:active,&.active {
-        background: $Border_color_3;
+        background: $Font_Title_1_Active;
         color: $Font_color_1;
     }
 
@@ -1782,8 +1800,8 @@ aside.colorPicker .hint i{
     color: $Font_color_2;
 
     &:hover,&:active,&.active {
-        color: $Font_Title_1;
-        border-color: $Font_Title_1;
+        background: $Font_Title_1_Active;
+        color: $Font_color_1;
     }
 }
 
@@ -1818,6 +1836,11 @@ aside.colorPicker .hint i{
 .innerPage .marqueeWrap,
 .gamePage_Wrap .center .marqueeWrap {
     @include marqueeStyle;
+}
+
+.innerPage .marqueeWrap,
+.gamePage_Wrap .center .marqueeWrap {
+    margin: 20px auto;
 }
 
 .innerPage .center>div.midSide.bankCard .midTop .objectList ul .cardSet li {

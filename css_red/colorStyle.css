@@ -21,34 +21,37 @@ header .UnLoginBox label input {
 }
 
 header .UnLoginBox label i {
-  color: #000000;
+  color: #BF8E2A;
   font-size: 14px;
 }
 
 header .UnLoginBox .loginBtn {
-  background: -webkit-gradient(linear, left bottom, left top, from(#F0433A), color-stop(50%, #820333), to(#F0433A));
-  background: linear-gradient(to top, #F0433A 0%, #820333 50%, #F0433A 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFD47D), color-stop(50%, #BF8E2A), to(#FFD47D));
+  background: linear-gradient(to top, #FFD47D 0%, #BF8E2A 50%, #FFD47D 100%);
   border-radius: 3px;
-  border: 1px solid #ffffff;
+  border: none;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 header .UnLoginBox .loginBtn:hover, header .UnLoginBox .loginBtn:active, header .UnLoginBox .loginBtn.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#540032), color-stop(50%, #F0433A), to(#540032));
-  background: linear-gradient(to bottom, #540032 0%, #F0433A 50%, #540032 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#BF8E2A), to(#FFD47D));
+  background: linear-gradient(to bottom, #BF8E2A 0%, #FFD47D 100%);
 }
 
 header .UnLoginBox .registerBtn {
-  background: #F0433A;
-  border: solid 1px #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#54E8FF), color-stop(50%, #2884FC), to(#54E8FF));
+  background: linear-gradient(to top, #54E8FF 0%, #2884FC 50%, #54E8FF 100%);
+  border: none;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 header .UnLoginBox .registerBtn:hover, header .UnLoginBox .registerBtn:active, header .UnLoginBox .registerBtn.active {
-  border-color: #820333;
+  background: -webkit-gradient(linear, left bottom, left top, from(#28BBFC), to(#2884FC));
+  background: linear-gradient(to top, #28BBFC 0%, #2884FC 100%);
+  border: 1px solid #ffffff;
 }
 
 header .UnLoginBox .registerBtn i {
@@ -102,12 +105,12 @@ header .loginBox > li:nth-of-type(8).active {
 }
 
 header .loginBox .userName {
-  color: #F5BFB8;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
 }
 header .loginBox .userName span {
-  color: #f14f47;
+  color: #FFD47D;
 }
 
 header .loginBox li a {
@@ -121,16 +124,16 @@ header .loginBox li:not(:first-child) p {
 }
 
 header .loginBox > li.total p {
-  color: #f14f47;
+  color: #ffffff;
 }
 
 header .loginBox > li.total i {
-  color: #f14f47;
+  color: #ffffff;
   font-size: 12px;
 }
 
 header .loginBox .transferInfo {
-  background: #F5BFB8;
+  background: #F2DBE3;
   border: 1px solid #F0433A;
 }
 
@@ -149,6 +152,13 @@ header .loginBox .transferInfo li p.money {
   font-weight: bold;
 }
 
+header .loginBox li.message.notify::before {
+  background: #FFD47D;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 header .bottom {
   background: #ffffff;
 }
@@ -158,7 +168,7 @@ header nav li::before {
 }
 
 header nav li a p {
-  color: #820333;
+  color: #000000;
   font-size: 18px;
   font-weight: bold;
 }
@@ -166,7 +176,7 @@ header nav li a p {
 header nav li:hover a p,
 header nav li:active a p,
 header nav li.active a p {
-  color: #F0433A;
+  color: #820333;
 }
 
 header .downList {
@@ -208,8 +218,12 @@ header .downList .fa-solid.fa-chevron-right {
   font-size: 44px;
 }
 
+.home .mainWrap {
+  background: #FBF2E7;
+}
+
 .home .typeList .gameBlock p {
-  color: #820333;
+  color: #000000;
   font-size: 26px;
   font-weight: bold;
 }
@@ -231,8 +245,8 @@ header .downList .fa-solid.fa-chevron-right {
 }
 
 main .gamePage_Wrap .center .containerWrap .textBox .title {
-  background: -webkit-gradient(linear, left top, left bottom, from(#820333), to(#F0433A));
-  background: linear-gradient(to bottom, #820333 0%, #F0433A 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#820333), to(#820333));
+  background: linear-gradient(to bottom, #820333 0%, #820333 100%);
   font-weight: bold;
 }
 
@@ -280,17 +294,17 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li {
   font-weight: bold;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active {
-  color: #F0433A;
+  color: #000000;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::before, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::before {
-  background: #820333;
+  background: #F0433A;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:hover::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li:active::after, main .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li.active::after {
-  border-color: transparent transparent #820333 transparent;
+  border-color: transparent transparent #F0433A transparent;
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
-  color: #686868;
+  color: #F0433A;
   font-size: 18px;
 }
 
@@ -306,7 +320,7 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
-  color: #686868;
+  color: #000000;
   font-size: 18px;
   font-weight: bold;
 }
@@ -317,7 +331,7 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i.fa-solid.fa-heart {
-  color: #ff30b2;
+  color: #BF8E2A;
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
@@ -325,33 +339,35 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter {
-  background: -webkit-gradient(linear, left bottom, left top, from(#801c1c), to(#f13945));
-  background: linear-gradient(to top, #801c1c 0%, #f13945 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#FBD865), color-stop(50%, #BB8527), to(#FBD865));
+  background: linear-gradient(to top, #FBD865 0%, #BB8527 50%, #FBD865 100%);
   border-radius: 3px;
-  border: 1px solid #f56d5c;
+  border: none;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter:hover, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter:active, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.enter.active {
-  background: #5a0c0c;
+  background: -webkit-gradient(linear, left bottom, left top, from(#BB8527), to(#9B580B));
+  background: linear-gradient(to top, #BB8527 0%, #9B580B 100%);
 }
 
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try {
-  background: -webkit-gradient(linear, left bottom, left top, from(#324ab9), to(#6a91f3));
-  background: linear-gradient(to top, #324ab9 0%, #6a91f3 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#63D457), color-stop(50%, #43952B), to(#63D457));
+  background: linear-gradient(to top, #63D457 0%, #43952B 50%, #63D457 100%);
   border-radius: 3px;
-  border: 1px solid #5c8df5;
+  border: none;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
 main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try:hover, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try:active, main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button.try.active {
-  background: #0e1c5e;
+  background: -webkit-gradient(linear, left bottom, left top, from(#48BB3D), to(#248B19));
+  background: linear-gradient(to top, #48BB3D 0%, #248B19 100%);
 }
 
 main .eventWrap {
-  background: #f4f4f4;
+  background: #FBF2E7;
 }
 
 main .eventWrap .eventTitle p {
@@ -371,10 +387,10 @@ main .eventWrap .eventBody .sideNav ul li {
   border-bottom: 1px solid #cccccc;
 }
 main .eventWrap .eventBody .sideNav ul li:hover, main .eventWrap .eventBody .sideNav ul li:active, main .eventWrap .eventBody .sideNav ul li.active {
-  background: #F5BFB8;
+  background: #F2DBE3;
 }
 main .eventWrap .eventBody .sideNav ul li:hover::before, main .eventWrap .eventBody .sideNav ul li:active::before, main .eventWrap .eventBody .sideNav ul li.active::before {
-  background: #F0433A;
+  background: #820333;
 }
 
 main .eventWrap .eventBody .sideNav ul li i {
@@ -407,16 +423,16 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button {
 }
 
 main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply {
-  background: -webkit-gradient(linear, left top, left bottom, from(#540032), color-stop(50%, #F0433A), to(#540032));
-  background: linear-gradient(to bottom, #540032 0%, #F0433A 50%, #540032 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#56DB94), color-stop(50%, #2395A2), to(#56DB94));
+  background: linear-gradient(to bottom, #56DB94 0%, #2395A2 50%, #56DB94 100%);
+  border: none;
 }
 main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:hover, main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply:active, main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#540032), color-stop(50%, #F0433A), to(#540032));
-  background: linear-gradient(to bottom, #540032 0%, #F0433A 50%, #540032 100%);
+  background: #28979F;
 }
 
 main .helpWrap {
-  background: #f4f4f4;
+  background: #FBF2E7;
 }
 
 main .helpWrap .helpBody .sideNav > ul {
@@ -445,7 +461,7 @@ main .helpWrap .helpBody .sideNav ul li ul li {
   background: transparent;
 }
 main .helpWrap .helpBody .sideNav ul li ul li:hover, main .helpWrap .helpBody .sideNav ul li ul li:active, main .helpWrap .helpBody .sideNav ul li ul li.active {
-  background: #F5BFB8;
+  background: #F2DBE3;
 }
 
 main .helpWrap .helpBody .sideNav ul li ul li p {
@@ -489,7 +505,7 @@ main .helpWrap .helpBody .container > div p.haveBtn {
 }
 
 main.innerPage {
-  background: #f4f4f4;
+  background: #FBF2E7;
 }
 
 main.innerPage .center > div > div:not(.listTitle),
@@ -507,7 +523,7 @@ main.innerPage .center .leftSide p.userAccount {
 }
 
 main.innerPage .center .leftSide p.userAccount .level {
-  background: #F0433A;
+  background: #BF8E2A;
   border-radius: 5px;
   color: #ffffff;
   font-size: 14px;
@@ -524,18 +540,12 @@ main.innerPage .center .leftSide .quickSelect li .quickBtn {
   background: -webkit-gradient(linear, left bottom, left top, from(#F0433A), color-stop(50%, #820333), to(#F0433A));
   background: linear-gradient(to top, #F0433A 0%, #820333 50%, #F0433A 100%);
   border-radius: 50px;
-  border: 1px solid #540032;
+  border: 1px solid #50001F;
 }
 
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:active,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
-  background: #820333;
-  border-radius: 50px;
+main.innerPage .center .leftSide .quickSelect li .quickBtn:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
+  background: #F0433A;
+  border: none;
 }
 
 main.innerPage .center .leftSide .quickSelect li .quickBtn p {
@@ -572,7 +582,7 @@ main.innerPage .center .leftSide .innerNav li a p {
 }
 
 main.innerPage .center .leftSide .innerNav li a i {
-  color: #820333;
+  color: #F0433A;
   font-size: 14px;
 }
 
@@ -588,7 +598,7 @@ main.innerPage .center .leftSide .innerNav li a i.fa-regular.fa-mobile-screen-bu
 main.innerPage .center .leftSide .content .innerNav li:hover a,
 main.innerPage .center .leftSide .content .innerNav li:active a,
 main.innerPage .center .leftSide .content .innerNav li.active a {
-  background: #F5BFB8;
+  background: #F2DBE3;
 }
 main.innerPage .center .leftSide .content .innerNav li:hover a::before,
 main.innerPage .center .leftSide .content .innerNav li:active a::before,
@@ -599,7 +609,7 @@ main.innerPage .center .leftSide .content .innerNav li.active a::before {
 main.innerPage .center .leftSide .innerNav li:hover a i,
 main.innerPage .center .leftSide .innerNav li:active a i,
 main.innerPage .center .leftSide .innerNav li.active a i {
-  color: #820333;
+  color: #F0433A;
 }
 
 main.innerPage .center .leftSide .innerNav li:hover a p,
@@ -677,10 +687,11 @@ main.innerPage .center .rightSide .recordList li .detail i {
 main.innerPage .center .rightSide .recordList li .winLose .half {
   color: #000000;
   font-size: 15px;
+  font-weight: bold;
 }
 
 main.innerPage .center .rightSide .recordList li .winLose .half.win {
-  color: #32b411;
+  color: #07D400;
 }
 
 main.innerPage .center .rightSide .recordList li .winLose .half.lose {
@@ -691,6 +702,7 @@ main.innerPage .center .rightSide .recordList li .winLose .half span {
   color: #686868;
   font-size: 13px;
   letter-spacing: 1px;
+  font-weight: unset;
 }
 
 main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
@@ -735,13 +747,13 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay {
 }
 
 main.innerPage .center .midSide .midTop .objectList ul li.payWay:hover, main.innerPage .center .midSide .midTop .objectList ul li.payWay:active, main.innerPage .center .midSide .midTop .objectList ul li.payWay.active {
-  background: -webkit-gradient(linear, left top, right top, from(#F0433A), to(#540032));
-  background: linear-gradient(to right, #F0433A 0%, #540032 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#F0433A), to(#C7004B));
+  background: linear-gradient(to left, #F0433A 0%, #C7004B 100%);
   color: #ffffff;
 }
 
 main.innerPage .center .midSide .midBottom .remindBox {
-  border: 1px solid #540032;
+  border: 1px solid #50001F;
 }
 
 main.innerPage .center .midSide .midBottom .remindBox p {
@@ -819,7 +831,7 @@ main.innerPage .center .midSide .midPageList li {
   letter-spacing: 2px;
 }
 main.innerPage .center .midSide .midPageList li:hover, main.innerPage .center .midSide .midPageList li:active, main.innerPage .center .midSide .midPageList li.active {
-  background: linear-gradient(135deg, #F0433A 0%, #540032 100%);
+  background: linear-gradient(135deg, #EBB954 0%, #F0433A 100%);
 }
 
 main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap span.hint {
@@ -833,8 +845,6 @@ main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button 
   font-size: 14px;
 }
 main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button:hover, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button:active, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button.active {
-  background: #820333;
-  border-color: #540032;
   color: #ffffff;
 }
 
@@ -843,11 +853,11 @@ main.innerPage .center .midSide .midBottom .content form.searchBlock::before {
 }
 
 main.innerPage .center .midSide .midBottom table tr th {
-  border-bottom: 2px solid #540032;
+  border-bottom: 2px solid #F0433A;
 }
 
 main.innerPage .center .midSide .midBottom table tr th p {
-  color: #820333;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -916,7 +926,7 @@ main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_stat
 }
 
 main.innerPage .center .midSide.memberCenter .midTop .objectList.memberData_state ul li.active i {
-  background: #32b411;
+  background: #07D400;
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom form .half label .itemName {
@@ -928,7 +938,7 @@ main.innerPage .center .midSide.memberCenter .midBottom form .half label button 
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
-  width: 100px;
+  width: 130px;
   height: 40px;
   font-size: 15px;
   letter-spacing: 1px;
@@ -954,11 +964,11 @@ main.innerPage .center .midSide.memberCenter .midBottom table tr th:not(:last-ch
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(3) p {
-  color: #540032;
+  color: #BF8E2A;
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom table tr td:nth-of-type(5) p {
-  color: #32b411;
+  color: #2C8712;
 }
 
 main.innerPage .center .midSide.invite .midBottom .infoBlock p {
@@ -986,8 +996,8 @@ main.innerPage .center .midSide.vip .midBottom .bar {
 }
 
 main.innerPage .center .midSide.vip .midBottom .bar span {
-  background: -webkit-gradient(linear, left top, right top, from(#F0433A), to(#540032));
-  background: linear-gradient(to right, #F0433A 0%, #540032 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#F0433A), to(#F0433A));
+  background: linear-gradient(to right, #F0433A 0%, #F0433A 100%);
   border-radius: 50px;
 }
 
@@ -1154,27 +1164,31 @@ main.innerPage .center .midSide.dealRecord .midBottom table tr th:not(:last-chil
 }
 
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(3) p {
-  color: #540032;
+  color: #BF8E2A;
 }
 
 main.innerPage .center .midSide.dealRecord .midBottom table.water tr td:nth-of-type(5) p {
-  color: #32b411;
+  color: #07D400;
 }
 
 main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-type(1) p {
-  color: #540032;
+  color: #F0433A;
   text-decoration: underline;
   cursor: pointer;
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap {
-  border-bottom: 1px solid #540032;
+  border-bottom: 2px solid #F0433A;
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap p {
   color: #820333;
   font-size: 14px;
   font-weight: bold;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap {
+  border-bottom: 1px solid #cccccc;
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p {
@@ -1189,7 +1203,7 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .de
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p:nth-of-type(5).win {
-  color: #32b411;
+  color: #07D400;
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap i {
@@ -1207,8 +1221,8 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li tab
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr:first-child {
-  background: -webkit-gradient(linear, left top, right top, from(#F0433A), to(#540032));
-  background: linear-gradient(to right, #F0433A 0%, #540032 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#F0433A), to(#C7004B));
+  background: linear-gradient(to left, #F0433A 0%, #C7004B 100%);
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr th {
@@ -1255,11 +1269,11 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList li tab
 }
 
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li table tr td:last-child p.win {
-  color: #32b411;
+  color: #07D400;
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock {
-  border: 1px solid #540032;
+  border: 1px solid #50001F;
   border-radius: 3px;
 }
 
@@ -1282,15 +1296,15 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .even
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount .times {
-  color: #32b411;
+  color: #07D400;
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
-  border-color: #540032;
-  color: #540032;
+  border-color: #50001F;
+  color: #50001F;
 }
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:hover, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:active, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply.active {
-  background: #540032;
+  background: #50001F;
   color: #ffffff;
 }
 
@@ -1310,15 +1324,15 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functio
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll {
-  color: #32b411;
-  border-color: #32b411;
+  color: #07D400;
+  border-color: #07D400;
   margin-right: 10px;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.read.active,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll:hover,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll:active,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap button.readAll.active {
-  background: #32b411;
+  background: #07D400;
   color: #ffffff;
 }
 
@@ -1350,14 +1364,14 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
   border-bottom: 1px solid #cccccc;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.active {
-  background: #F5BFB8;
+  background: #F2DBE3;
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen {
   background: #f3f3f3;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:hover, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen:active, main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li.seen.active {
-  background: #F5BFB8;
+  background: #F2DBE3;
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .text {
@@ -1551,7 +1565,6 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
   border-color: #820333;
 }
 .registerWrap .signUpBlock form label .outer button:hover, .registerWrap .signUpBlock form label .outer button:active, .registerWrap .signUpBlock form label .outer button.active {
-  background: #820333;
   color: #ffffff;
 }
 
@@ -1575,7 +1588,8 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
 }
 
 .registerWrap .signUpBlock form .policy p span {
-  color: #F0433A;
+  color: #BF8E2A;
+  text-decoration: underline;
 }
 
 footer .top {
@@ -1591,7 +1605,7 @@ footer .top .center li p {
 footer .top .center li:hover a,
 footer .top .center li:active a,
 footer .top .center li.active a {
-  background: radial-gradient(circle, #F0433A -5px, #820333 40px);
+  background: radial-gradient(circle, #B11F42 -5px, #50001F 40px);
 }
 
 footer .top .center .copyright {
@@ -1658,8 +1672,8 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow .title {
-  background: -webkit-gradient(linear, left top, right top, from(#F0433A), to(#540032));
-  background: linear-gradient(to right, #F0433A 0%, #540032 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#F0433A), to(#C7004B));
+  background: linear-gradient(to left, #F0433A 0%, #C7004B 100%);
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
@@ -1694,7 +1708,7 @@ aside.colorPicker .hint i {
   font-weight: bold;
 }
 .filter .jumpWindow.news li button:hover, .filter .jumpWindow.news li button:active, .filter .jumpWindow.news li button.active {
-  color: #F0433A;
+  color: #820333;
 }
 
 .filter .jumpWindow.news li button::before {
@@ -1702,7 +1716,7 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow.news li button::after {
-  background: #540032;
+  background: #F0433A;
 }
 
 .filter .jumpWindow.news li .text {
@@ -1746,7 +1760,7 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow .content table tr th {
-  border-bottom: 2px solid #540032;
+  border-bottom: 2px solid #50001F;
   text-align: center;
   vertical-align: middle;
 }
@@ -1771,11 +1785,11 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow.dealDetail .content table tr td:nth-of-type(3) p {
-  color: #32b411;
+  color: #07D400;
 }
 
 .filter .jumpWindow .content table.pointJump {
-  border: 1px solid #540032;
+  border: 1px solid #50001F;
 }
 
 .filter .jumpWindow .content table.pointJump tr {
@@ -1786,7 +1800,7 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow .content table tr th {
-  border-bottom: 1px solid #540032;
+  border-bottom: 1px solid #50001F;
 }
 
 .filter .jumpWindow .content table tr th p {
@@ -1798,7 +1812,7 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow .content table tr:not(:last-child) td {
-  border-color: #540032;
+  border-color: #50001F;
 }
 
 .filter .jumpWindow .content table tr td:not(:last-child) p {
@@ -1829,11 +1843,11 @@ aside.colorPicker .hint i {
   font-size: 24px;
 }
 
-.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p {
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button {
   font-size: 14px;
 }
-.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:hover, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p:active, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button p.active {
-  color: #820333;
+.filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button:hover p, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button:active p, .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button.active p {
+  color: #ffffff;
 }
 
 .filter .jumpWindow.quickTransfer .btnBox {
@@ -1841,26 +1855,26 @@ aside.colorPicker .hint i {
 }
 
 .btnStyle_1 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#F0433A), color-stop(50%, #820333), to(#F0433A));
-  background: linear-gradient(to top, #F0433A 0%, #820333 50%, #F0433A 100%);
-  border: 1px solid #cccccc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3CA74), color-stop(50%, #D27C30), to(#F3CA74));
+  background: linear-gradient(to bottom, #F3CA74 0%, #D27C30 50%, #F3CA74 100%);
+  border: 1px solid #AE572A;
   border-radius: 5px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
 }
 .btnStyle_1:hover, .btnStyle_1:active, .btnStyle_1.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#F0433A), color-stop(50%, #F0433A), to(#F0433A));
-  background: linear-gradient(to top, #F0433A 0%, #F0433A 50%, #F0433A 100%);
+  background: #D58722;
 }
 .btnStyle_1:disabled {
   background: #c0c0c0;
+  border: none;
   cursor: default;
 }
 
 .btnStyle_2 {
   background: transparent;
-  border: 1px solid #F0433A;
+  border: 1px solid #820333;
   border-radius: 3px;
   color: #820333;
 }
@@ -1883,8 +1897,8 @@ aside.colorPicker .hint i {
   color: #000000;
 }
 .btnStyle_3:hover, .btnStyle_3:active, .btnStyle_3.active {
-  color: #820333;
-  border-color: #820333;
+  background: #F0433A;
+  color: #ffffff;
 }
 
 .inputStyle_1 {
@@ -1923,7 +1937,7 @@ aside.colorPicker .hint i {
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .mainWrap .center .marqueeWrap .title,
 .innerPage .marqueeWrap .title,
@@ -1941,8 +1955,8 @@ aside.colorPicker .hint i {
           justify-content: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#F0433A), color-stop(50%, #820333), to(#F0433A));
-  background: linear-gradient(to top, #F0433A 0%, #820333 50%, #F0433A 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#820333), color-stop(50%, #B11F42), to(#820333));
+  background: linear-gradient(to bottom, #820333 0%, #B11F42 50%, #820333 100%);
   border-radius: 50px;
   color: #ffffff;
   font-size: 16px;
@@ -1994,6 +2008,11 @@ aside.colorPicker .hint i {
   }
 }
 
+.innerPage .marqueeWrap,
+.gamePage_Wrap .center .marqueeWrap {
+  margin: 20px auto;
+}
+
 .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2005,7 +2024,7 @@ aside.colorPicker .hint i {
   -webkit-box-pack: unset;
       -ms-flex-pack: unset;
           justify-content: unset;
-  background: linear-gradient(120deg, #F0433A 0%, #820333 50%, #F0433A 100%);
+  background: linear-gradient(225deg, #B70C4D 0%, #820333 50%, #B70C4D 100%);
   border-radius: 5px;
   border: 1px solid #ffffff;
   -webkit-box-shadow: 0 2px 5px 2px #e1e1e1;
@@ -2058,7 +2077,7 @@ aside.colorPicker .hint i {
   border-radius: 0 0 5px 5px;
 }
 .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li .state p {
-  background: linear-gradient(120deg, #F0433A 0%, #820333 50%, #F0433A 100%);
+  background: linear-gradient(225deg, #B70C4D 0%, #820333 50%, #B70C4D 100%);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;

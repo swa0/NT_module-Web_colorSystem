@@ -150,6 +150,13 @@ header .loginBox .transferInfo li p.money {
   font-weight: bold;
 }
 
+header .loginBox li.message.notify::before {
+  background: #B4BEC9;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 header .bottom {
   background: #ffffff;
 }
@@ -678,6 +685,7 @@ main.innerPage .center .rightSide .recordList li .detail i {
 main.innerPage .center .rightSide .recordList li .winLose .half {
   color: #000000;
   font-size: 15px;
+  font-weight: bold;
 }
 
 main.innerPage .center .rightSide .recordList li .winLose .half.win {
@@ -692,6 +700,7 @@ main.innerPage .center .rightSide .recordList li .winLose .half span {
   color: #686868;
   font-size: 13px;
   letter-spacing: 1px;
+  font-weight: unset;
 }
 
 main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
@@ -929,7 +938,7 @@ main.innerPage .center .midSide.memberCenter .midBottom form .half label button 
 }
 
 main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
-  width: 100px;
+  width: 130px;
   height: 40px;
   font-size: 15px;
   letter-spacing: 1px;
@@ -1571,6 +1580,7 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
 
 .registerWrap .signUpBlock form .policy p span {
   color: #159A9C;
+  text-decoration: underline;
 }
 
 footer .top {
@@ -1918,7 +1928,7 @@ aside.colorPicker .hint i {
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .mainWrap .center .marqueeWrap .title,
 .innerPage .marqueeWrap .title,
@@ -1987,6 +1997,11 @@ aside.colorPicker .hint i {
     -webkit-transform: translate(-100%);
             transform: translate(-100%);
   }
+}
+
+.innerPage .marqueeWrap,
+.gamePage_Wrap .center .marqueeWrap {
+  margin: 20px auto;
 }
 
 .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li {

@@ -125,13 +125,19 @@ header {
                     &.message {
 
                         &.notify {
+                            position: relative;
 
                             &::before {
-                                content: "";
+                                content: "10";
                                 width: 20px;
                                 height: 20px;
                                 display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 border-radius: 50px;
+                                position: absolute;
+                                top: 2px;
+                                right: 3px;
                             }
                         }
                     }

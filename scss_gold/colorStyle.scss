@@ -154,6 +154,12 @@ header .loginBox .transferInfo li p.money {
     font-size: 14px;
     font-weight: bold;
 }
+header .loginBox li.message.notify::before {
+    background: $Font_accent02;
+    color: $Font_color_2;
+    font-size: 12px;
+    font-weight: bold;
+}
 header .bottom {
     background: $BG_color_2;
 }
@@ -611,6 +617,7 @@ main.innerPage .center .rightSide .recordList li .detail i {
 main.innerPage .center .rightSide .recordList li .winLose .half {
     color: $Font_color_2;
     font-size: 15px;
+    font-weight: bold;
 }
 main.innerPage .center .rightSide .recordList li .winLose .half.win {
     color: $Font_positive;
@@ -622,6 +629,7 @@ main.innerPage .center .rightSide .recordList li .winLose .half span {
     color: $Font_color_3;
     font-size: 13px;
     letter-spacing: 1px;
+    font-weight: unset;
 }
 main.innerPage .center .rightSide .recordList li.eventBlock .eventInfo {
     color: $Font_color_2;
@@ -837,7 +845,7 @@ main.innerPage .center .midSide.memberCenter .midBottom form .half label button 
     white-space: nowrap;
 }
 main.innerPage .center .midSide.memberCenter .midBottom button.changeBtn {
-    width: 100px;
+    width: 130px;
     height: 40px;
     font-size: 15px;
     letter-spacing: 1px;
@@ -1386,6 +1394,7 @@ main.innerPage .center .midSide.deposit .midBottom .deposit_finished .deposit_St
 }
 .registerWrap .signUpBlock form .policy p span {
     color: $Font_Title_1_Active;
+    text-decoration: underline;
 }
 
 //footer
@@ -1621,7 +1630,7 @@ aside.colorPicker .hint i{
     box-shadow: 0 0 13px 3px $boxShadow_1;
     display: flex;
     padding: 5px;
-    margin: 20px auto;
+    margin: 0 auto;
 
     .title {
         width: 160px;
@@ -1808,6 +1817,10 @@ aside.colorPicker .hint i{
 .innerPage .marqueeWrap,
 .gamePage_Wrap .center .marqueeWrap {
     @include marqueeStyle;
+}
+.innerPage .marqueeWrap,
+.gamePage_Wrap .center .marqueeWrap {
+    margin: 20px auto;
 }
 
 .innerPage .center>div.midSide.bankCard .midTop .objectList ul .cardSet li {

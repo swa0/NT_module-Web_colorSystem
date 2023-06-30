@@ -636,15 +636,28 @@ html body header .top .center .loginBox li.total,
 html body header .bottom .center .loginBox li.total {
   padding: 0 20px;
 }
+html body header .top .center .loginBox li.message.notify,
+html body header .bottom .center .loginBox li.message.notify {
+  position: relative;
+}
 html body header .top .center .loginBox li.message.notify::before,
 html body header .bottom .center .loginBox li.message.notify::before {
-  content: "";
+  content: "10";
   width: 20px;
   height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50px;
+  position: absolute;
+  top: 2px;
+  right: 3px;
 }
 html body header .top .center .loginBox li a,
 html body header .bottom .center .loginBox li a {
@@ -912,6 +925,7 @@ html body .mainWrap {
 html body .mainWrap .center {
   width: 1400px;
   height: auto;
+  padding: 20px 0 0;
   margin: 0 auto;
 }
 html body .mainWrap .center .marqueeWrap {
@@ -1745,15 +1759,37 @@ html body .innerPage .center > div.midSide.memberCenter .midBottom label {
   margin-bottom: 30px;
 }
 html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord input {
-  width: 207px;
+  width: 196px;
 }
 html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord button {
-  width: 60px;
+  width: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center > div.midSide.memberCenter .midBottom label button {
   width: auto;
   padding: 5px;
   margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput {
+  width: 286px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 3px 3px 15px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput input {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput button {
+  width: 70px;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center > div.midSide.memberCenter .midBottom table tr th {
   width: 16.6666666667%;
@@ -2260,6 +2296,10 @@ html body .innerPage .center > div.midSide.betRecord .midBottom .content .record
 }
 html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li.active table {
   display: table;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li .detailWrap {
+  width: 97%;
+  margin: 0 auto;
 }
 html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table {
   width: 97%;
@@ -2853,6 +2893,9 @@ html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .card
 }
 html body .innerPage .center > div.midSide.bankCard .midBottom form {
   width: 45%;
+}
+html body .innerPage .center > div.midSide.bankCard .midBottom form .submitBtn {
+  width: 288px;
 }
 html body .innerPage .center > div.midSide.transfer .midTop {
   margin-bottom: 0;
