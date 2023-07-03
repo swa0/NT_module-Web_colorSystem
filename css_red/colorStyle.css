@@ -747,8 +747,7 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay {
 }
 
 main.innerPage .center .midSide .midTop .objectList ul li.payWay:hover, main.innerPage .center .midSide .midTop .objectList ul li.payWay:active, main.innerPage .center .midSide .midTop .objectList ul li.payWay.active {
-  background: -webkit-gradient(linear, right top, left top, from(#F0433A), to(#C7004B));
-  background: linear-gradient(to left, #F0433A 0%, #C7004B 100%);
+  background: #F0433A;
   color: #ffffff;
 }
 
@@ -1177,6 +1176,11 @@ main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-t
   cursor: pointer;
 }
 
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList {
+  width: 100%;
+  padding: 0 20px;
+}
+
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap {
   border-bottom: 2px solid #F0433A;
 }
@@ -1187,7 +1191,12 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList .title
   font-weight: bold;
 }
 
-main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap {
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li .detailWrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li.active .detailWrap {
   border-bottom: 1px solid #cccccc;
 }
 
@@ -1300,12 +1309,13 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .even
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
-  border-color: #50001F;
-  color: #50001F;
+  background: -webkit-gradient(linear, left top, left bottom, from(#56DB94), color-stop(50%, #2395A2), to(#56DB94));
+  background: linear-gradient(to bottom, #56DB94 0%, #2395A2 50%, #56DB94 100%);
+  border-color: #0C4DBC;
+  color: #ffffff;
 }
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:hover, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply:active, main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply.active {
-  background: #50001F;
-  color: #ffffff;
+  background: #2395A2;
 }
 
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock p {
@@ -1357,7 +1367,7 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all::before,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all::before {
-  background: #cccccc;
+  background: #820333;
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li {
@@ -1381,7 +1391,7 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
 }
 
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date {
-  color: #686868;
+  color: #000000;
   font-size: 14px;
 }
 
@@ -1789,7 +1799,7 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow .content table.pointJump {
-  border: 1px solid #50001F;
+  border: 1px solid #820333;
 }
 
 .filter .jumpWindow .content table.pointJump tr {
@@ -1800,7 +1810,7 @@ aside.colorPicker .hint i {
 }
 
 .filter .jumpWindow .content table tr th {
-  border-bottom: 1px solid #50001F;
+  border-bottom: 2px solid #F0433A;
 }
 
 .filter .jumpWindow .content table tr th p {

@@ -1609,6 +1609,15 @@
         
                                             &.block {
                                                 justify-content: unset;
+
+                                                label {
+                                                    display: flex;
+                                                    margin: 0;
+
+                                                    input {
+                                                        padding: 0;
+                                                    }
+                                                }
                                                 
                                                 .btnWrap {
 
@@ -1703,6 +1712,13 @@
                                                         left: 50%;
                                                         transform: translate(-50%,-50%);
                                                     }
+
+                                                    &:checked {
+
+                                                        &::before {
+                                                            opacity: 1;
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -1714,7 +1730,7 @@
                                             button {
                                                 width: auto;
                                                 height: 30px;
-                                                padding: 0 15px;
+                                                padding: 0 15px 2px;
     
                                                 &.read,
                                                 &.delete {

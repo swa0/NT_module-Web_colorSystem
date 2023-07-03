@@ -448,6 +448,17 @@ $(function(){
         .removeClass("editState");
     })
 
+    
+    //全部選取
+    $(".innerPage .center .midSide.mailWrap .functionWrap .block label.select input").click(function(){
+        $(this)
+        .closest(".outerMode")
+        .find("ul.allMail li")
+        .addClass("chosen")
+        .find("input")
+        .prop('checked', true);
+    })
+
     //選取
     $(".innerPage .center .midSide.mailWrap .content .outerMode .allMail li .select input.all").change(function(){
         $(this)

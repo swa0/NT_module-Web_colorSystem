@@ -678,7 +678,7 @@ main.innerPage .center .midSide .midTop .objectList ul li.payWay {
 main.innerPage .center .midSide .midTop .objectList ul li.payWay {
     
     &:hover,&:active,&.active {
-        background: $linear_2;
+        background: $Font_Title_1_Active;
         color: $Font_color_1;
     }
 }
@@ -1062,6 +1062,10 @@ main.innerPage .center .midSide.pointRecord .midBottom table.deal tr td:nth-of-t
 }
 
 //betRecord
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList {
+    width: 100%;
+    padding: 0 20px;
+}
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList .titleWrap {
     border-bottom: 2px solid $Border_color_3;
 } 
@@ -1070,7 +1074,11 @@ main.innerPage .center .midSide.betRecord .midBottom .content .recordList .title
     font-size: 14px;
     font-weight: bold;
 } 
-main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap {
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li .detailWrap {
+    width: 100%;
+    margin: 0 auto;
+}
+main.innerPage .center .midSide.betRecord .midBottom .content .recordList li.active .detailWrap {
     border-bottom: 1px solid $Border_color_1;
 }
 main.innerPage .center .midSide.betRecord .midBottom .content .recordList li .detailWrap p {
@@ -1157,13 +1165,13 @@ main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .even
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount .times {
     color: $Font_positive;
 }
-main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply {
-    border-color: $Font_accent01;
-    color: $Font_accent01;
+main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .eventTitle button.callEventApply { //個別調整
+    background: linear-gradient(to bottom, #56DB94 0%, #2395A2 50%, #56DB94 100%);
+    border-color: #0C4DBC;
+    color: $Border_color_0;
 
     &:hover,&:active,&.active {
-        background: $Font_accent01;
-        color: $Font_color_1;
+        background: #2395A2;
     }
 }
 main.innerPage .center .midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock p {
@@ -1207,7 +1215,7 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .select .all::before,
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .select .all::before {
-   background: $Border_color_1;
+   background: $BG_color_1;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li {
     border-bottom: 1px solid $Border_color_1;
@@ -1229,7 +1237,7 @@ main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail
     font-weight: bold;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date {
-    color: $Font_color_3;
+    color: $Font_color_2;
     font-size: 14px;
 }
 main.innerPage .center .midSide.mailWrap .midBottom .content .outerMode .allMail li .date::before {
@@ -1582,7 +1590,7 @@ aside.colorPicker .hint i{
 }
 //查詢紅利 x代會員
 .filter .jumpWindow .content table.pointJump {
-    border: 1px solid $Border_color_2;
+    border: 1px solid $BG_color_1;
 }
 .filter .jumpWindow .content table.pointJump tr {
     width: 99.8%;
@@ -1591,7 +1599,7 @@ aside.colorPicker .hint i{
     display: inline-table;
 }
 .filter .jumpWindow .content table tr th {
-    border-bottom: 1px solid $Border_color_2;
+    border-bottom: 2px solid $Font_Title_1_Active;
 }
 .filter .jumpWindow .content table tr th p {
     color: $Font_color_2;

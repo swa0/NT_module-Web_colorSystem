@@ -2466,6 +2466,15 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
       -ms-flex-pack: unset;
           justify-content: unset;
 }
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block label input {
+  padding: 0;
+}
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .read,
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .delete {
   display: block;
@@ -2560,6 +2569,9 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select .all:checked::before {
+  opacity: 1;
+}
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2571,7 +2583,7 @@ html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMo
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button {
   width: auto;
   height: 30px;
-  padding: 0 15px;
+  padding: 0 15px 2px;
 }
 html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.read, html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.delete {
   display: none;
