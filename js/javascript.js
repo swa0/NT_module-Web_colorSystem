@@ -785,7 +785,10 @@ $(function(){
             .attr("href", "./css_green/colorStyle.css");
         }else if($(this).hasClass("blue")) {
             $(".colorSystem")
-            .attr("href", "../css_blue/colorStyle.css");
+            .attr("href", "./css_blue/colorStyle.css");
+        }else if($(this).hasClass("purple")) {
+            $(".colorSystem")
+            .attr("href", "./css_purple/colorStyle.css");
         }
     })
     $("aside.innerPage.colorPicker .color .colorBlock").click(function(){
