@@ -3869,6 +3869,12 @@ html body aside.colorPicker .color .colorBlock.red {
 html body aside.colorPicker .color .colorBlock.green {
   background: #235945;
 }
+html body aside.colorPicker .color .colorBlock.blue {
+  background: #158CF5;
+}
+html body aside.colorPicker .color .colorBlock.purple {
+  background: #9647BF;
+}
 html body .filter {
   display: none;
   width: 100%;
