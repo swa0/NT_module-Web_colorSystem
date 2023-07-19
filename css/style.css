@@ -3599,6 +3599,7 @@ html body .helpWrap .helpBody .container > div button {
 }
 html body .swiper {
   width: 100%;
+  min-width: 1400px;
 }
 html body .swiper .swiper-wrapper {
   width: 100%;
