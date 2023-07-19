@@ -3875,6 +3875,9 @@ html body aside.colorPicker .color .colorBlock.blue {
 html body aside.colorPicker .color .colorBlock.purple {
   background: #9647BF;
 }
+html body aside.colorPicker .color .colorBlock.orange {
+  background: #ffa500;
+}
 html body .filter {
   display: none;
   width: 100%;
