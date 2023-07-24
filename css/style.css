@@ -3646,6 +3646,7 @@ html body .swiper .swiper-button-next {
 }
 html body footer {
   width: 100%;
+  min-width: 1400px;
   height: auto;
 }
 html body footer .top {

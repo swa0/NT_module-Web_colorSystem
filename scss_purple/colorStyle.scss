@@ -319,7 +319,7 @@ main .gamePage_Wrap .center .containerWrap .textBox .title p.small {
 }
 
 main .gamePage_Wrap .center .containerWrap .textBox p.mainCnt {
-    color: $Font_color_2;
+    color: $Font_color_1;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -459,7 +459,7 @@ main .eventWrap .eventBody .sideNav ul li {
         background: $Font_accent02;
 
         &::before {
-            background: #9634D4;
+            background: $Font_accent02;
         }
 
         p {
@@ -691,7 +691,7 @@ main.innerPage .center .leftSide .content .innerNav li.active a {
     background: $Font_accent02;
 
     &::before {
-        background: $Font_Title_1;
+        background: $Font_accent02;
     }
 }
 
@@ -2042,7 +2042,7 @@ aside.colorPicker .hint i {
 @mixin marqueeStyle {
     background: $BG_color_2;
     border-radius: 50px;
-    box-shadow: 0 0 13px 3px $boxShadow_1;
+    box-shadow: 0 0 13px 3px transparent;
     display: flex;
     padding: 5px;
     margin: 0 auto;

@@ -266,7 +266,7 @@ main .gamePage_Wrap .center .containerWrap .textBox .title p.small {
 }
 
 main .gamePage_Wrap .center .containerWrap .textBox p.mainCnt {
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -393,7 +393,7 @@ main .eventWrap .eventBody .sideNav ul li:hover, main .eventWrap .eventBody .sid
   background: #C2A0DC;
 }
 main .eventWrap .eventBody .sideNav ul li:hover::before, main .eventWrap .eventBody .sideNav ul li:active::before, main .eventWrap .eventBody .sideNav ul li.active::before {
-  background: #9634D4;
+  background: #C2A0DC;
 }
 main .eventWrap .eventBody .sideNav ul li:hover p, main .eventWrap .eventBody .sideNav ul li:active p, main .eventWrap .eventBody .sideNav ul li.active p {
   color: #ffffff;
@@ -611,7 +611,7 @@ main.innerPage .center .leftSide .content .innerNav li.active a {
 main.innerPage .center .leftSide .content .innerNav li:hover a::before,
 main.innerPage .center .leftSide .content .innerNav li:active a::before,
 main.innerPage .center .leftSide .content .innerNav li.active a::before {
-  background: #ffffff;
+  background: #C2A0DC;
 }
 
 main.innerPage .center .leftSide .innerNav li:hover a i,
@@ -1956,8 +1956,8 @@ aside.colorPicker .hint i {
 .gamePage_Wrap .center .marqueeWrap {
   background: #ffffff;
   border-radius: 50px;
-  -webkit-box-shadow: 0 0 13px 3px #e1e1e1;
-          box-shadow: 0 0 13px 3px #e1e1e1;
+  -webkit-box-shadow: 0 0 13px 3px transparent;
+          box-shadow: 0 0 13px 3px transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
