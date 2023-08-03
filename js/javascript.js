@@ -575,7 +575,7 @@ $(function(){
     })
     
     //請先登入
-    $("header .bottom, .home, footer").click(function(){
+    $("header .bottom, header .downList, .home, footer").click(function(){
         if($(this).closest("body").hasClass("unlogin"))
         {
             $(".filter, .jumpWindow.plsLogin")
