@@ -2,6 +2,9 @@ footer {
     width: 100%;
     min-width: 1400px;
     height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
 
     .top {
         width: auto;

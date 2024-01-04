@@ -3648,6 +3648,9 @@ html body footer {
   width: 100%;
   min-width: 1400px;
   height: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
 }
 html body footer .top {
   width: auto;
@@ -4249,7 +4252,7 @@ html body .filter .jumpWindow .btnBox .remind {
 html body main {
   width: 100%;
   height: auto;
-  padding-top: 120px;
+  padding: 120px 0 215px;
 }
 html body .bg {
   position: absolute;
